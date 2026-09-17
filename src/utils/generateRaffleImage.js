@@ -23,7 +23,7 @@ function drawRoundRect(ctx, x, y, width, height, radius, fill = true, stroke = t
 export function generateRaffleImage(tickets) {
   const canvas = document.createElement('canvas')
   const width = 640
-  const height = 760
+  const height = 780
   canvas.width = width
   canvas.height = height
 
@@ -144,6 +144,13 @@ export function generateRaffleImage(tickets) {
   ctx.textAlign = 'left'
   ctx.textBaseline = 'middle'
   ctx.fillText('Número Vendido', 386, legendY)
+
+  // 5. Firma del proyecto al pie de la imagen
+  ctx.fillStyle = '#a8a29e'
+  ctx.font = '600 11px system-ui, -apple-system, sans-serif'
+  ctx.textAlign = 'center'
+  ctx.textBaseline = 'middle'
+  ctx.fillText('Creado por Antequera Tech', 320, 756)
 
   return canvas.toDataURL('image/png')
 }

@@ -166,4 +166,4 @@ Los datos se almacenan en el `localStorage` del navegador del dispositivo donde 
 
 ---
 
-Desarrollado con ❤️ para una gestión de rifas moderna, táctil y eficiente.
+Desarrollado con ❤️ • **Creado por Antequera Tech**

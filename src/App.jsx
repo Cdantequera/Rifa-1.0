@@ -70,9 +70,16 @@ export default function App() {
         </button>
 
         {/* Resumen de compradores */}
-        <section className="pb-4">
+        <section className="pb-1">
           <BuyerList tickets={tickets} onSelectTicket={handleSelectTicket} />
         </section>
+
+        {/* Firma del proyecto */}
+        <footer className="pt-2 pb-1 text-center border-t border-stone-100">
+          <p className="text-xs font-medium text-stone-400 tracking-wide">
+            Creado por <span className="font-bold text-stone-700">Antequera Tech</span>
+          </p>
+        </footer>
       </main>
 
       {/* Modal para asignar o gestionar un número */}
